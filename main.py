@@ -13,6 +13,7 @@ from neuralforecast import NeuralForecast
 from neuralforecast.models import LSTM, NHITS, RNN
 import logging
 import os
+import torch, torchvision, torchaudio
 
 def TimeGPT_no_finetune(df, test_df):
     # 数据预处理
@@ -343,9 +344,9 @@ if __name__ == "__main__":
     # 设置NumPy随机种子
     np.random.seed(42)
 
-    # TimeGPT设置API，备用API：
+    # TimeGPT设置API，备用API：nixak-VbIdu0cbaaPjAIAs19rEfBmQFSzNMNBiWn3xgUNooacSc5OeGSeSBXSt8C33pdTGN9WIP8zgNBTCFtcc
     nixtla_client = NixtlaClient(
-        api_key='nixak-I4z5OgmYFR1NA8xkdIGWhDrRUO9uN2eeN0eLHCOfLdNMyibtAj7YaeVCoZmpbVXgKnTFqwHPg7IvZYZb'
+        api_key='nixak-ZdKefxF2vUq9dbWzKW6NLuYhcN6Wgn0cfu1muNgeTpUTu51dVglzZGiK0sGNS29vVq0KzvM0pNcSf5Fr'
     )
 
     # TimeGPT无微调模型
